@@ -3,18 +3,9 @@ import React from 'react';
 export const FeaturedIcons: Record<string, () => React.ReactNode> ={
   revolut: () => (
     <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <mask id="revolutMask" maskUnits="userSpaceOnUse" x="0" y="0" width="48" height="48">
-        <circle cx="24" cy="24" r="24" fill="#C4C4C4" />
-      </mask>
-      <g mask="url(#revolutMask)">
-        <rect width="48" height="48" fill="url(#revolutPattern)" />
-      </g>
-      <defs>
-        <pattern id="revolutPattern" patternContentUnits="objectBoundingBox" width="1" height="1">
-          <image href="/images/revolut.png" width="400" height="400" />
-        </pattern>
-      </defs>
-    </svg>
+    <circle cx="24" cy="24" r="24" fill="#2D33DD" />
+    <path d="M17 17H31V31H17V17Z" fill="white" />
+  </svg>
   ),
   dropbox: () => (
     <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
