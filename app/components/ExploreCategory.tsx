@@ -1,9 +1,11 @@
+"use client" 
 import React from "react";
 import { ArrowRight } from "lucide-react";
 import { CategoryIcons } from "./icons/CategoryIcons";
 import CategoryCard from "./CategoryCard";
 
 const ExploreCategory = () => {
+
     const categories = [
         { icon: <CategoryIcons.Design />, title: "Design", count: 235 },
         { icon: <CategoryIcons.Sales />, title: "Sales", count: 756 },

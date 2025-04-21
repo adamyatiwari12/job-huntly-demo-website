@@ -15,9 +15,9 @@ const JobSearch = () => {
             <div className="flex gap-1 items-center">
             <MapPin className="h-4 w-4 text-[#25324B] opacity-60" />
             <select className="focus:outline-none opacity-60">
-              <option>Florence, Itlay</option>
-              <option>Rome, Itlay</option>
-              <option>Milan, Itlay</option>
+              <option>Florence, Italy</option>
+              <option>Rome, Italy</option>
+              <option>Milan, Italy</option>
               <option>New York, USA</option>
               <option>London, UK</option>
               <option>Berlin, Germany</option>

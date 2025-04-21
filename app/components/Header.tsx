@@ -3,6 +3,7 @@ import Logo from "./icons/logo";
 import { Menu } from "lucide-react";
 
 const Header = () => {
+  
   return (
     <header className="w-full flex justify-between items-center px-[8rem] h-[5rem] max-lg:px-[2rem] max-md:px-[1.5rem] max-sm:px-[1rem]">
       <div className="flex items-center gap-12">
@@ -12,10 +13,10 @@ const Header = () => {
         </div>
         <nav className="flex gap-4 justify-center items-center max-md:hidden">
           <a href="#" className="text-[#515B6F] text-base font-medium">
-            Find Jobs
+            Explore Categories
           </a>
           <a href="#" className="text-[#515B6F] text-base font-medium">
-            Browse Companies
+            Featured Jobs
           </a>
           <a href="#" className="text-[#515B6F] text-base font-medium">
             Browse Applications
