@@ -64,17 +64,12 @@ const LatestJobs = () => {
       ];
 
   return (
-    <div className="px-30 py-20 bg-[#F8F8FD]">
-        {/* <div className='absolute z-[1] w-[860px] h-[794px]'
-          dangerouslySetInnerHTML={{
-            __html: `<svg id="I0:2037;292:8665" layer-name="Pattern" width="797" height="877" viewBox="0 0 797 877" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-full h-full"> <path opacity="0.6" d="M328.972 -72.173L615.806 -212.02L617.987 -3.74798L329.227 135.94L328.972 -72.173Z" fill="#F8F8FD" stroke="#CCCCF5" stroke-width="4"></path> <path d="M261.005 590.224L816.767 306.268L816.767 646.273L261.229 928.43L261.005 590.224Z" fill="#F8F8FD" stroke="#CCCCF5" stroke-width="4"></path> <path d="M2.00481 957.244L517.767 703.214L517.767 1013.25L2.22902 1265.48L2.00481 957.244Z" fill="#F8F8FD" stroke="#CCCCF5" stroke-width="4"></path> </svg>`,
-          }}
-        /> */}
+    <div className="px-30 py-20 bg-[#F8F8FD] max-md:px-10 max-sm:px-5">
     <div className='flex justify-between items-center z-[2]'>
-      <h2 className='text-5xl font-semibold leading-[52.8px] text-[#25324B]'>Latest <span className="text-[#26A4FF]">Jobs Open</span></h2>
-      <h4 className="text-[#4640DE] font-semibold">Show all jobs <span><ArrowRight className="inline"/></span></h4>
+      <h2 className='text-5xl font-semibold leading-[52.8px] text-[#25324B] max-md:text-3xl'>Latest <span className="text-[#26A4FF]">Jobs Open</span></h2>
+      <h4 className="text-[#4640DE] font-semibold hidden lg:block">Show all jobs <span><ArrowRight className="inline"/></span></h4>
     </div>
-    <div className="grid grid-cols-2 gap-8 mt-15">
+    <div className="grid grid-cols-2 gap-8 mt-15 max-lg:grid-cols-1">
         {jobs_data.map((elem,ind)=>(
             <LatestCard
             key={ind}

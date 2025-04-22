@@ -83,12 +83,12 @@ const jobsData = [
 
 const FeaturedJobs = () => {
   return (
-    <div className="px-30 pt-25 pb-20 bg-white">
-      <div className='flex justify-between items-center'>
-        <h2 className='text-5xl font-semibold leading-[52.8px] text-[#25324B]'>Featured <span className="text-[#26A4FF]">Jobs</span></h2>
-        <h4 className="text-[#4640DE] font-semibold mt-5">Show all jobs <span><ArrowRight className="inline"/></span></h4>
+    <div className="px-30 pt-25 pb-20 bg-white max-lg:px-10 max-sm:px-3">
+      <div className='flex justify-between items-center '>
+        <h2 className='text-5xl font-semibold leading-[52.8px] text-[#25324B] max-md:text-3xl'>Featured <span className="text-[#26A4FF]">Jobs</span></h2>
+        <h4 className="text-[#4640DE] font-semibold mt-5 hidden lg:block">Show all jobs <span><ArrowRight className="inline"/></span></h4>
       </div>
-      <div className="grid grid-cols-4 gap-8 mt-15">
+      <div className="grid grid-cols-4 gap-8 mt-15 max-lg:overflow-y-auto max-lg:flex max-md:mt-8"> 
         {jobsData.map((job, index) => (
           <FeaturedCard
             key={index}
@@ -101,6 +101,7 @@ const FeaturedJobs = () => {
           />
         ))}
       </div>
+      <h4 className="text-[#4640DE] font-semibold mt-7 hidden max-lg:block">Show all jobs <span><ArrowRight className="inline"/></span></h4>
     </div>
   )
 }

@@ -3,7 +3,7 @@ import React from 'react'
 const FooterLogo = () => {
   return (
     <div className='flex flex-col w-[376px] gap-10'>
-    <div className='flex gap-2'>
+    <div className='flex gap-1 items-center'>
       <div>
       <svg
             width="32"
@@ -35,9 +35,9 @@ const FooterLogo = () => {
             </defs>
           </svg>
       </div>
-      <div className="text-white text-2xl font-bold ml-2">JobHuntly</div>
+      <div className="text-white text-[2rem] font-bold ml-2">JobHuntly</div>
     </div>
-    <div className="text-[#D6DDEB] text-base leading-[25.6px]">
+    <div className="text-[#D6DDEB] text-md leading-[25.6px] max-lg:w-[19rem]">
         Great platform for the job seeker that passionate about startups. Find
         your dream job easier.
       </div>

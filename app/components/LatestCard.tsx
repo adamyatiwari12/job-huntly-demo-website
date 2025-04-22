@@ -17,7 +17,7 @@ const LatestCard = ({
 }: LatestCardProps) => {
   return (
     <div className="border border-solid border-[#D6DDEB] rounded-lg p-6 bg-white">
-      <div className="flex gap-4">
+      <div className="flex gap-4 max-md:flex-col">
         <div>{logo}</div>
         <div className="flex flex-col gap-2">
           <h1 className="text-[#25324B] text-xl font-bold">{title}</h1>
@@ -36,7 +36,7 @@ const LatestCard = ({
                 {tags.map((tag, index) => (
                   <span
                     key={index}
-                    className={`px-3 py-2 rounded-full text-sm font-bold ${
+                    className={`px-3 py-2 rounded-full text-sm font-bold max-md:text-xs max-md:px-1 max-md:py-2 ${
                       tag === "Marketing"
                         ? "text-[#FFB836] border border-[#FFB836]"
                         : "text-[#4640DE] border border-[#4640DE]"

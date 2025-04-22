@@ -2,7 +2,7 @@ import React from 'react'
 
 const FooterNewsletter = () => {
   return (
-    <div className='flex flex-col gap-10 w-[362px]'>
+    <div className='flex flex-col gap-10 w-[362px] max-lg:w-full'>
        <div className="text-white text-lg font-semibold">Get Job Notifications</div>
        <div className="text-[#D6DDEB] text-base leading-[25.6px]">
         The latest job news, articles, sent to your inbox weekly.

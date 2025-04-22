@@ -14,12 +14,12 @@ export default function Home() {
     <div className="bg-[#F8F8FD]">
       <Pattern />
       <Header/>
-      <main className="px-[6rem] flex justify-between relative z-1">
+      <main className="px-[6rem] flex justify-between relative z-1 max-lg:px-[2rem] max-md:px-[1.5rem] max-sm:px-[1rem]">
         <div>
         <DiscoverJobs/>
         <JobSearch/>
         </div>
-        <div>
+        <div className="max-lg:hidden">
           <img src="/Hero Image.png" alt="Image" height={100} width={100} className="h-full w-full" />
         </div>
         
@@ -27,7 +27,7 @@ export default function Home() {
       <section>
         <GrowSection/>
         <ExploreCategory/>
-        <img src="/Stats.png" alt="Image" height={100} width={100} className="h-full w-full" />
+        <img src="/Stats.png" alt="Image" height={100} width={100} className="h-full w-full max-lg:hidden" />
       </section>
       <FeaturedJobs/>
       <LatestJobs/>

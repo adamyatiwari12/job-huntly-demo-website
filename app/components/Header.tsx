@@ -11,7 +11,7 @@ const Header = () => {
           <Logo />
           <div className="text-[#25324B] text-2xl font-bold">JobHuntly</div>
         </div>
-        <nav className="flex gap-4 justify-center items-center max-md:hidden">
+        <nav className="flex gap-4 justify-center items-center max-lg:hidden">
           <a href="#" className="text-[#515B6F] text-base font-medium">
             Explore Categories
           </a>

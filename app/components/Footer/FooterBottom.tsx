@@ -2,9 +2,9 @@ import React from 'react'
 
 const FooterBottom = () => {
   return (
-    <div className='bg-[#202430]  py-10 px-35'>
+    <div className='bg-[#202430]  py-10 px-35 max-lg:px-10 max-md:px-5 max-sm:px-2'>
       <div className="h-px bg-[rgba(255,255,255,0.1)] mb-10" />
-      <div className='flex items-center justify-between'>
+      <div className='flex items-center justify-between max-md:flex-col max-md:gap-5'>
       <div className="text-[rgba(255,255,255,0.5)] text-base">
           2025 @ All rights reserved.
         </div>
